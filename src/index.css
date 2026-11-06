@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+    --color-espresso: #120c09; /* the page background */
+    --color-roast: #22170f;    /* cards and panels */
+    --color-latte: #b89a7c;    /* quieter text */
+    --color-crema: #f3e6d4;    /* text */
+    --color-ember: #e8823f;    /* buttons, the current page, the bag */
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Fraunces", Georgia, serif; /* headings */
+}
+
+@layer base {
+    body {
+        @apply bg-espresso text-crema antialiased;
+    }
+
+    button {
+        cursor: pointer;
+    }
+}
